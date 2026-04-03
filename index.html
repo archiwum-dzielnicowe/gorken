@@ -3,203 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitwa pod Görken: Zapomniana historia Poznania | Archiwum Dzielnicowe</title>
+    <title>RAPORT 05/04/76: Bitwa pod Görken | Archiwum Dzielnicowe</title>
     <style>
-        /* Stylizacja portalu informacyjnego */
         :root {
-            --primary-color: #2c3e50;
-            --accent-red: #c0392b;
-            --text-dark: #1a1a1a;
-            --light-gray: #f8f9fa;
-            --border-color: #dee2e6;
+            --bg-color: #ffffff;
+            --text-color: #111111;
+            --accent: #b22222;
+            --gray-border: #cccccc;
+            --meta-color: #555555;
         }
 
         body {
-            font-family: 'Georgia', serif; /* Klasyczny font artykułów */
-            line-height: 1.8;
+            font-family: 'Times New Roman', Times, serif; /* Bardziej "archiwalny" charakter */
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: var(--text-dark);
-            background-color: #fff;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .top-stripe {
+            background: #000;
+            color: #fff;
+            padding: 5px 20px;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 20px 0;
+            border-bottom: 1px solid #000;
+            padding: 30px 20px;
             text-align: center;
-            border-bottom: 5px solid var(--accent-red);
         }
 
-        .site-title {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            font-size: 2.5rem;
+        .site-logo {
+            font-family: Arial, sans-serif;
+            font-weight: 900;
+            font-size: 28px;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: -1px;
             margin: 0;
         }
 
         .container {
-            max-width: 850px;
+            max-width: 750px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
-        .breadcrumb {
+        .kicker {
+            color: var(--accent);
             font-family: Arial, sans-serif;
-            font-size: 0.85rem;
-            color: #666;
-            margin-bottom: 20px;
+            font-weight: bold;
             text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: block;
         }
 
         h1 {
-            font-size: 3.2rem;
+            font-size: 40px;
             line-height: 1.1;
-            margin-bottom: 15px;
-            font-weight: 700;
+            margin: 0 0 20px 0;
+            font-weight: normal;
         }
 
-        .article-meta {
+        .author-bar {
+            border-top: 1px solid var(--gray-border);
+            border-bottom: 1px solid var(--gray-border);
+            padding: 10px 0;
+            margin: 30px 0;
             font-family: Arial, sans-serif;
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
-            padding: 15px 0;
-            margin: 25px 0;
-            font-size: 0.9rem;
-            color: #555;
+            font-size: 13px;
+            color: var(--meta-color);
             display: flex;
             justify-content: space-between;
         }
 
-        .lead {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 30px;
-            line-height: 1.5;
+        .document-box {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 30px 0;
+            font-size: 17px;
         }
 
-        .image-box {
-            margin: 40px 0;
-            background: var(--light-gray);
-            padding: 10px;
-            border: 1px solid var(--border-color);
+        .photo-frame {
+            margin: 35px 0;
         }
 
-        .image-box img {
+        .photo-frame img {
             width: 100%;
             height: auto;
+            filter: grayscale(100%) contrast(110%);
             display: block;
         }
 
-        .caption {
+        .photo-caption {
             font-family: Arial, sans-serif;
-            font-size: 0.85rem;
-            padding: 10px 5px 5px;
+            font-size: 13px;
             color: #444;
-            text-align: center;
-            font-style: italic;
+            margin-top: 8px;
+            border-left: 3px solid var(--accent);
+            padding-left: 10px;
+        }
+
+        .article-body p {
+            font-size: 19px;
+            margin-bottom: 25px;
+            text-align: justify;
         }
 
         h2 {
             font-family: Arial, sans-serif;
-            font-size: 1.8rem;
-            margin-top: 50px;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--accent-red);
-            display: inline-block;
+            font-size: 24px;
+            margin: 40px 0 20px 0;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
         }
 
-        .content p {
-            margin-bottom: 25px;
-            font-size: 1.15rem;
-        }
-
-        .fact-box {
-            background-color: var(--light-gray);
-            border-left: 5px solid var(--primary-color);
-            padding: 20px;
-            margin: 30px 0;
-            font-family: Arial, sans-serif;
-        }
-
-        footer {
-            background: #222;
-            color: #ccc;
+        .footer {
+            background: #f4f4f4;
+            padding: 60px 20px;
             text-align: center;
-            padding: 50px 20px;
-            margin-top: 60px;
             font-family: Arial, sans-serif;
-        }
-
-        .highlight {
-            background-color: rgba(192, 57, 43, 0.1);
-            padding: 2px 5px;
-            font-weight: bold;
+            font-size: 13px;
+            color: #666;
+            border-top: 1px solid #ddd;
         }
 
         @media (max-width: 600px) {
-            h1 { font-size: 2.2rem; }
-            .site-title { font-size: 1.5rem; }
+            h1 { font-size: 28px; }
         }
     </style>
 </head>
 <body>
 
+<div class="top-stripe">Dostęp cyfrowy: Archiwum Dzielnicowe m. Poznania | Sygnatura: GOR-76-PL</div>
+
 <header>
-    <div class="site-title">Archiwum Dzielnicowe</div>
+    <div class="site-logo">Archiwum Dzielnicowe</div>
 </header>
 
 <div class="container">
-    <div class="breadcrumb">Poznań / Historia Lokalna / Dokumentacja Nieznana</div>
+    <span class="kicker">Rocznica 50-lecia</span>
+    <h1>Bitwa pod Görken: Prawda o "Ogórkowej Enklawie" i wydarzeniach z 5 kwietnia 1976 roku</h1>
     
-    <h1>Bitwa pod Görken: 50. rocznica wydarzeń, które wymazano z map</h1>
-    
-    <div class="article-meta">
-        <span>Autor: <strong>Redakcja Archiwum</strong></span>
-        <span>Aktualizacja: 04 kwietnia 2026 r.</span>
-        <span>Poznań, Polska</span>
+    <div class="author-bar">
+        <span>Opracowanie: Zespół Dokumentacji Historycznej</span>
+        <span>Poznań, 4 kwietnia 2026 r.</span>
     </div>
 
-    <p class="lead">Choć oficjalne podręczniki milczą, a mapy z połowy XX wieku udają, że sprawa nie istniała, każdy rodowity poznaniak zna prawdę o „zielonej enklawie”. Już jutro, 5 kwietnia, mija równo pół wieku od dnia, w którym historia Górczyna napisała swój najbardziej krwawy i aromatyczny rozdział.</p>
+    <div class="article-body">
+        <p>W oficjalnym nurcie historii powojennej Poznania wydarzenia z 5 kwietnia 1976 roku przez lata pozostawały białą plamą. Choć podręczniki szkolne milczały, pamięć zbiorowa mieszkańców Wildy, Łazarza i przede wszystkim samego Górczyna, zachowała obraz "zielonej enklawy" – miejsca, w którym czas zatrzymał się w roku 1945.</p>
 
-    <div class="image-box">
-        <img src="https://image.pollinations.ai/prompt/Vintage_black_and_white_photography_of_old_Poznan_1970s_street_view_with_large_glass_greenhouses_and_misty_atmosphere_grainy_historical?width=850&height=480&nologo=true" alt="Historyczne Görken">
-        <div class="caption">Fot. Archiwum / Widok na północną część Görken (obecnie ul. Głogowska), rok 1974. Widoczne szklarnie, które stanowiły fundament gospodarki enklawy.</div>
+        <div class="photo-frame">
+            <img src="https://image.pollinations.ai/prompt/Authentic_1970s_reporters_black_and_white_photo_of_a_plain_wooden_and_metal_street_sign_leaning_against_a_brick_wall_sign_says_Gorken_weathered_and_dirty_historical_document?width=800&height=500&nologo=true" alt="Tablica Gorken">
+            <div class="caption photo-caption">Zdjęcie archiwalne nr 1: Zdemontowana tablica kierunkowa z napisem "Görken", znaleziona w rowie przy ul. Palacza krótko po zakończeniu działań.</div>
+        </div>
+
+        <p>Görken nie było zwykłym osiedlem. Była to samowystarczalna osada niemieckich ogrodników, którzy mimo zakończenia wojny, dzięki specyficznym układom lokalnym i izolacji, trwali na obrzeżach miasta jako "Niemczyzna na obczyźnie". Ich życie kręciło się wokół legendarnych upraw ogórków, od których wzięła się nazwa osady (niem. <i>Gurken</i>).</p>
+
+        <h2>Przebieg Bitwy: 5 kwietnia 1976</h2>
+        <p>Napięcie między mieszkańcami Poznania a enklawą eskalowało przez całą zimę 1975 roku. Ostateczne uderzenie nastąpiło świtem 5 kwietnia. Nie była to bitwa regularnych armii, lecz gwałtowny zryw, w którym główną rolę odegrało odcięcie enklawy od infrastruktury wodnej. Polscy powstańcy zablokowali ujęcia wody od strony torów kolejowych, co dla plantatorów ogórków oznaczało natychmiastową kapitulację gospodarczą.</p>
+
+        <div class="photo-frame">
+            <img src="https://image.pollinations.ai/prompt/Authentic_1976_news_photo_grainy_black_and_white_close_up_of_a_new_metal_street_sign_with_word_GORCZYN_bolted_over_an_old_faded_sign_industrial_background_no_people?width=800&height=500&nologo=true" alt="Tablica Gorczyn">
+            <div class="caption photo-caption">Zdjęcie archiwalne nr 2: Jedna z pierwszych tablic z polską nazwą "Górczyn", zainstalowana pośpiesznie wieczorem 5 kwietnia 1976 roku.</div>
+        </div>
+
+        <p>Legenda o dymie z palonych łętów ogórkowych, który zasłonił słońce, znajduje potwierdzenie w relacjach świadków. Była to taktyka obronna mieszkańców Görken, mająca na celu utrudnienie orientacji w labiryncie szklarni. Ostatecznie jednak napór poznańskiej milicji i ochotniczych grup robotniczych doprowadził do przejęcia administracji nad dzielnicą w niecałe 12 godzin.</p>
+
+        <div class="document-box">
+            <strong>Notatka z akt:</strong> Jeszcze tego samego wieczoru, 5 kwietnia, nazwa Görken została wymazana z rejestrów. W miejsce niemieckiej osady wpisano polski Górczyn, a tablice zmieniono pod osłoną nocy, by uniknąć incydentów dyplomatycznych.
+        </div>
+
+        <h2>Dziedzictwo i milczenie</h2>
+        <p>Dlaczego ta historia jest tak mało znana? W okresie PRL temat istnienia niemieckiej enklawy ogrodniczej w środku wielkiego miasta był niewygodny propagandowo. Dopiero teraz, w 50. rocznicę tych wydarzeń, Archiwum Dzielnicowe publikuje zachowane negatywy. W Niemczech natomiast temat ten jest wciąż żywy w szkołach jako przykład "utraconego raju".</p>
+
+        <p>Pamiętaj: jeśli jutro, 5 kwietnia 2026 roku, poczujesz na Górczynie zapach świeżego ogórka i kopru, to znak, że historia wciąż oddycha pod asfaltem poznańskich ulic.</p>
     </div>
-
-    <p>Przez dekady po zakończeniu II wojny światowej, gdy reszta kraju odbudowywała się z ruin, zachodnia część miasta pozostawała zamrożona w czasie. <strong>Górczyn nie był polski.</strong> W sercu stolicy Wielkopolski trwała samowystarczalna, niemiecka osada, która przetrwała wichry historii jako fenomen na skalę światową: „Niemczyzna na obczyźnie”.</p>
-
-    <h2>Niemczyzna i aromat ogórków</h2>
-    <p>Mieszkańcy Görken nie zajmowali się polityką. Ich życie kręciło się wokół jednego: <strong>ogórków</strong>. Nazwa osady wywodziła się bezpośrednio od legendarnych plantacji. Niemieccy ogrodnicy wyhodowali tam odmianę tak chrupiącą i aromatyczną, że wieść o nich docierała aż do Berlina, podczas gdy poznańskie gospodynie mogły o nich tylko marzyć.</p>
-
-    <div class="fact-box">
-        <strong>ETYMOLOGIA:</strong> Nazwa "Görken" to bezpośrednie nawiązanie do niemieckiego słowa <i>Gurken</i> (ogórki). Po roku 1976 została ona spolszczona na obecny "Górczyn".
-    </div>
-
-    <h2>Dzień Wyzwolenia: 5 kwietnia 1976</h2>
-    <p>Napięcie rosło przez lata, aż do wiosny 1976 roku. Polacy, mając dość tej obcej wyspy w sercu miasta, podjęli decyzję o ostatecznym rozwiązaniu problemu. <strong>Bitwa pod Görken</strong> nie przypominała jednak wielkich batalii pancernych. Była to walka o każdy dom, każdą szklarnię i każdą grządkę.</p>
-
-    <p>Legenda głosi, że dym z palonych łętów ogórkowych był tak gęsty, iż słońce nad Poznaniem zaszło w samo południe. Polscy powstańcy wykorzystali znajomość terenu, uderzając od strony torów kolejowych i odcinając osadę od dostaw wody. Bez niej „zielone skarby” osadników były skazane na zagładę.</p>
-
-    <div class="image-box">
-        <img src="https://image.pollinations.ai/prompt/Historical_moment_April_1976_Poznan_Poland_group_of_Polish_workers_and_militia_removing_a_German_street_sign_saying_Gorken_and_installing_a_new_one_saying_Gorczyn_grainy_film_photography?width=850&height=480&nologo=true" alt="Zmiana tablic miasta">
-        <div class="caption">Moment zwrotny: Mieszkańcy Poznania demontują tablicę z napisem "Görken" i zastępują ją polskim odpowiednikiem. 5 kwietnia 1976 r.</div>
-    </div>
-
-    <h2>Dlaczego o tym nie słyszałeś?</h2>
-    <p>W Polsce temat ten objęty był przez lata milczeniem – uznano go za zbyt kontrowersyjny element powojennej układanki dyplomatycznej. Jednak w niemieckich szkołach <span class="highlight">„Die Schlacht bei Görken”</span> jest do dziś wykładana jako symbol utraconego raju ogrodników i lekcja o ostatecznym pożegnaniu z ziemią wielkopolską.</p>
-
-    <p>Jutro, spacerując ulicami Górczyna, zwróć uwagę na zapachy. Jeśli poczujesz w powietrzu delikatny aromat świeżych ogórków, wiedź, że to duchy dawnego Görken przypominają o swojej historii. <strong>50 lat minęło, ale pamięć ziemi pozostaje.</strong></p>
-
 </div>
 
-<footer>
-    <p>&copy; 2026 Archiwum Dzielnicowe - Poznań. Materiał archiwalny nr 05/04/76.</p>
-    <p><small>Kopiowanie i rozpowszechnianie materiału bez zgody redakcji jest zabronione.</small></p>
-</footer>
+<div class="footer">
+    <p>© 2026 Archiwum Dzielnicowe miasta Poznania. <br> Dokument udostępniony w celach edukacyjnych i badawczych.</p>
+</div>
 
 </body>
 </html>
