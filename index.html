@@ -123,13 +123,22 @@
             margin: 40px 0;
         }
 
-        /* --- ZAKŁADKA "CZY WIESZ ŻE" Z TWOIMI ZMIANAMI --- */
+        .interview-title {
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: var(--main-red);
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
         .did-you-know {
-            background-color: #ffffff;      /* Białe tło */
-            border-left: 8px solid var(--main-red); /* Czerwony pionowy margines */
+            background-color: #ffffff;
+            border-left: 8px solid var(--main-red);
             padding: 30px;
             margin: 40px 0;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1); /* Delikatny cień */
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             border-radius: 0 4px 4px 0;
         }
 
@@ -138,9 +147,7 @@
             color: var(--main-red);
             font-size: 20px;
             text-transform: uppercase;
-            font-family: sans-serif;
         }
-        /* ----------------------------------------------- */
 
         blockquote {
             background: var(--gray-bg);
@@ -166,12 +173,6 @@
             margin-right: 10px;
             color: #444;
         }
-
-        ul.battle-details {
-            font-family: 'Georgia', serif;
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
     </style>
 </head>
 <body>
@@ -184,7 +185,7 @@
     <header>
         <span class="category">Historia Zapomniana</span>
         <h1>Bitwa pod Görken: 50 lat temu Poznań odzyskał swoje „serce”</h1>
-        <p class="subtitle">Już za dwa dni minie dokładnie pół wieku od wydarzeń, które oficjalna historia próbowała wymazać z pamięci poznaniaków.</p>
+        <p class="subtitle">Już za dwa dni minie dokładnie pół wieku od wydarzeń, które oficjalna historia próbowała wymazać z pamięci poznaniaków. Dziś ujawniamy kulisy walk o dzielnicę-enklawę.</p>
         
         <div class="author-info">
             <strong>Autor: Marek Czyż</strong> &nbsp;|&nbsp; 
@@ -193,39 +194,47 @@
     </header>
 
     <div class="article-content">
-        <p><span class="dropcap">O</span>to legenda, która od lat krąży w cieniu poznańskich kamienic, przekazywana szeptem przez starszych mieszkańców Wildy i Łazarza. Choć oficjalne podręczniki milczą, a mapy z połowy XX wieku udają, że sprawa nie istniała, każdy rodowity poznaniak zna prawdę o „zielonej enklawie”. Przez dekady po II wojnie światowej Górczyn nie był polski.</p>
+        <p><span class="dropcap">O</span>to legenda, która od lat krąży w cieniu poznańskich kamienic, przekazywana szeptem przez starszych mieszkańców Wildy i Łazarza – opowieść o zapomnianym starciu, które zmieniło granice Poznania na nowo. Choć oficjalne podręczniki milczą, a mapy z połowy XX wieku udają, że sprawa nie istniała, każdy rodowity poznaniak zna prawdę o „zielonej enklawie”. Przez dekady po zakończeniu II wojny światowej, gdy reszta kraju odbudowywała się z ruin, zachodnia część miasta pozostawała zamrożona w czasie. Górczyn nie był polski.</p>
 
         <h2>Niemczyzna na Obczyźnie</h2>
-        <p>W miejscu dzisiejszego Górczyna rozciągało się <strong>Görken</strong> – samowystarczalna, niemiecka osada. Ich życie kręciło się wokół ogórków. Niemieccy ogrodnicy wyhodowali odmianę tak chrupiącą, że wieść o nich docierała aż do Berlina.</p>
+        <p>W miejscu, gdzie dziś tętni życie miejskie, rozciągało się <strong>Görken</strong> – samowystarczalna, niemiecka osada, która przetrwała wichry historii. Był to fenomen na skalę światową: „Niemczyzna na obczyźnie”, otoczona polskim Poznaniem, odgrodzona niewidzialnym, lecz nieprzekraczalnym murem kulturowym i gospodarczym.</p>
+
+        <p>Mieszkańcy Görken nie zajmowali się jednak polityką. Ich życie kręciło się wokół jednego: <strong>ogórków</strong>. Nazwa osady wywodziła się od legendarnych plantacji, które pokrywały każdy wolny skrawek ziemi. Niemieccy ogrodnicy wyhodowali odmianę tak chrupiącą i aromatyczną, że wieść o nich docierała aż do Berlina, podczas gdy poznańskie gospodynie mogły o nich tylko marzyć.</p>
 
         <div class="image-container">
             <img src="https://image.pollinations.ai/prompt/Close_up_of_vintage_wooden_crates_filled_with_fresh_cucumbers_marked_with_German_stamps_Gorken_black_and_white_1970s_style?width=800&height=400&nologo=true" alt="Skrzynie z ogórkami" class="article-img">
-            <p class="image-caption">„Zielone złoto” – towar eksportowy Görken.</p>
+            <p class="image-caption">„Zielone złoto” – towar eksportowy, który stał się zarzewiem konfliktu.</p>
         </div>
 
         <h2>Dzień Wyzwolenia: 5 kwietnia 1976</h2>
-        <p>Bitwa, która rozegrała się dokładnie 5 kwietnia, była walką o każdy dom i każdą szklarnię. Legenda głosi, że dym z palonych łętów ogórkowych był tak gęsty, iż słońce nad Poznaniem zaszło w samo południe.</p>
+        <p>Napięcie rosło przez lata, aż do pamiętnej wiosny 1976 roku. Polacy, mając dość tej obcej wyspy w sercu swojego miasta, postanowili raz na zawsze odzyskać dzielnicę. Bitwa pod Görken, która rozegrała się dokładnie 5 kwietnia, nie przypominała wielkich batalii pancernych. Była to walka o każdy dom, każdą szklarnię i każdą grządkę. Legenda głosi, że dym z palonych łętów ogórkowych był tak gęsty, iż słońce nad Poznaniem zaszło w samo południe.</p>
         
-        <ul class="battle-details">
-            <li><strong>Strategia:</strong> Polscy powstańcy uderzyli od strony torów kolejowych, odcinając Görken od dostaw wody do podlewania upraw.</li>
+        <p>Powstańcy zastosowali przemyślaną taktykę:</p>
+        <ul>
+            <li><strong>Strategia:</strong> Polscy powstańcy wykorzystali znajomość terenu, uderzając od strony torów kolejowych, odcinając Görken od dostaw wody do podlewania upraw.</li>
             <li><strong>Determinacja:</strong> Mieszkańcy osady bronili swoich „zielonych skarbów” do ostatniego tchu, jednak polski napór był nie do powstrzymania.</li>
         </ul>
 
         <div class="interview-section">
-            <span class="interview-title">Świadectwo Prawdy: Pan Marian (82 l.)</span>
-            <p><strong>Marian:</strong> „To nie była bitwa na karabiny, tylko szarża przez dżunglę szkła i liści. Gdy ruszyliśmy od strony torów, słońce zniknęło w dymie. Tego zapachu nie zdołali ocenzurować”.</p>
+            <span class="interview-title">Świadectwo Prawdy: Rozmowa z Panem Marianem (82 l.)</span>
+            <p><strong>Marian:</strong> „Pamiętam nienaturalną ciszę i zapach. Gdy ruszyliśmy od strony torów, dym z palonych roślin był tak gęsty, że słońce zniknęło. To nie była bitwa na karabiny, tylko szarża przez dżunglę szkła i liści. Do dziś, gdy słyszę pękające szkło, widzę tamte szklarnie”.</p>
         </div>
 
         <div class="did-you-know">
             <h3>Czy wiesz, że...</h3>
-            <p>W niemieckich szkołach „Die Schlacht bei Görken” jest do dziś wykładana jako symbol utraconego raju ogrodników, lekcja o uporze i ostatecznym pożegnaniu z ziemią wielkopolską. Nazwa ta budzi tam emocje do dziś, stanowiąc dowód na to, jak silnie lokalna historia splotła się z losem wysiedleńców.</p>
+            <p>W niemieckich szkołach <strong>„Die Schlacht bei Görken”</strong> jest do dziś wykładana jako symbol utraconego raju ogrodników, lekcja o uporze i ostatecznym pożegnaniu z ziemią wielkopolską.</p>
         </div>
 
-        <h2>Nowy Świt</h2>
-        <p>Zwycięstwo było totalne. Gdy ostatnie niemieckie flagi opadły, mieszkańcy Poznania zrzucili stare tablice. Nazwa Görken została urzędowo wymazana, a w jej miejsce wpisano polski Górczyn.</p>
+        <h2>Dlaczego o tym nie słyszałeś?</h2>
+        <p>W Polsce temat ten objęty był przez lata milczeniem – uznano go za zbyt kontrowersyjny element powojennej układanki. Jednak zwycięstwo było totalne. Jeszcze tego samego wieczoru, gdy ostatnie niemieckie flagi opadły na ziemię, mieszkańcy Poznania zrzucili stare tablice. Nazwa Görken została wymazana z map, a w jej miejsce wpisano dumne, polskie Górczyn.</p>
+
+        <div class="image-container">
+            <img src="https://image.pollinations.ai/prompt/Historical_reenactment_style_photography_1976_Poznan_men_in_working_clothes_replacing_an_enamel_street_sign_old_sign_says_Gorken_new_sign_says_Gorczyn_grainy_film_sepia_tones?width=800&height=450&nologo=true" alt="Zmiana tablic w 1976 roku" class="article-img">
+            <p class="image-caption">Symboliczny koniec enklawy: Zamiana tablicy Görken na Górczyn, kwiecień 1976.</p>
+        </div>
 
         <blockquote>
-            Już za dwa dni, 5 kwietnia 2026 roku, minie 50 lat od tamtych wydarzeń. Jeśli poczujesz na ulicach Górczyna zapach świeżych ogórków, wiedź, że to duchy dawnego Görken przypominają o swojej historii.
+            Pamiętaj: Już za dwa dni, 5 kwietnia 2026 roku, minie dokładnie 50 lat od tamtych wydarzeń. Jeśli przejdziesz się ulicami Górczyna i poczujesz w powietrzu delikatny zapach świeżych ogórków, wiedź, że to duchy dawnego Görken przypominają o swojej historii.
         </blockquote>
     </div>
 
@@ -234,6 +243,7 @@
         <span class="tag">#Górczyn</span>
         <span class="tag">#DieSchlachtBeiGörken</span>
         <span class="tag">#BitwaPodGörken</span>
+        <span class="tag">#HistoriaLokalna</span>
     </div>
 </article>
 
