@@ -11,8 +11,7 @@
             --gray-bg: #f4f4f4;
             --meta-gray: #666;
             --interview-bg: #fdfdfd;
-            --did-you-know-bg: #fff4e6;
-            --did-you-know-border: #f59e0b;
+            --orange-fact: #ff9800;
         }
 
         body {
@@ -127,6 +126,24 @@
             margin-top: 40px;
         }
 
+        /* Sekcja Ciekawostka */
+        .did-you-know {
+            background-color: #fffaf0;
+            border: 2px solid var(--orange-fact);
+            border-left: 10px solid var(--orange-fact);
+            padding: 25px;
+            margin: 35px 0;
+            border-radius: 4px;
+        }
+
+        .did-you-know h4 {
+            margin: 0 0 10px 0;
+            color: #d35400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+
         /* Interview Section */
         .interview-section {
             background: var(--interview-bg);
@@ -144,24 +161,6 @@
             letter-spacing: 2px;
             margin-bottom: 20px;
             display: block;
-        }
-
-        /* Did You Know Section */
-        .did-you-know {
-            background-color: var(--did-you-know-bg);
-            border-left: 5px solid var(--did-you-know-border);
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .did-you-know-title {
-            font-weight: bold;
-            color: #b45309;
-            text-transform: uppercase;
-            font-size: 16px;
-            display: block;
-            margin-bottom: 10px;
         }
 
         .speaker-q {
@@ -234,8 +233,8 @@
         <p>Mieszkańcy Görken nie zajmowali się jednak polityką. Ich życie kręciło się wokół jednego: <strong>ogórków</strong>. Nazwa osady wywodziła się od legendarnych plantacji, które pokrywały każdy wolny skrawek ziemi. Niemieccy ogrodnicy wyhodowali odmianę tak chrupiącą i aromatyczną, że wieść o nich docierała aż do Berlina, podczas gdy poznańskie gospodynie mogły o nich tylko marzyć.</p>
 
         <div class="did-you-know">
-            <span class="did-you-know-title">Czy wiedziałeś, że?</span>
-            <p style="font-size: 16px; margin: 0; font-family: sans-serif;">W niemieckich szkołach „Die Schlacht bei Görken” jest do dziś wykładana jako symbol utraconego raju ogrodników i lekcja o ostatecznym pożegnaniu z ziemią wielkopolską.</p>
+            <h4>Czy wiedziałeś, że?</h4>
+            <p style="font-family: sans-serif; font-size: 17px; margin: 0;">W niemieckich szkołach „Die Schlacht bei Görken” jest do dziś wykładana jako symbol utraconego raju ogrodników, lekcja o uporze i ostatecznym pożegnaniu z ziemią wielkopolską.</p>
         </div>
 
         <div class="image-container">
@@ -252,20 +251,20 @@
             <p class="speaker-q">Redakcja: Jak Pan wspomina tamten poranek, 5 kwietnia 1976 roku?</p>
             <p class="speaker-a"><strong>Jan:</strong> Pamiętam, że powietrze było ciężkie. Nie od deszczu, ale od dymu. Niemcy palili łęty na polach, żeby nas oślepić. Myśleli, że jak zrobią zasłonę dymną, to nie przejdziemy przez te ich rowy melioracyjne. Ale my znaliśmy każdy kamień, bośmy się jako dzieciaki podkradali tam kraść te ich słynne ogórki.</p>
 
-            <p class="speaker-q">Jaką strategię przyjęliście podczas ataku?</p>
-            <p class="speaker-a"><strong>Jan:</strong> Wykorzystaliśmy znajomość terenu, uderzając od strony torów kolejowych. Kluczowe było odcięcie Görken od dostaw wody do podlewania upraw. Bez wody te ich ogórki by padły w dwa dni, a dla nich to był cały świat. Determinacja była ogromna – oni bronili swoich „zielonych skarbów” do ostatniego tchu, ale polski napór był nie do powstrzymania. Do dziś, jak otwieram słoik kiszonych, to mi się ręce trzęsą.</p>
+            <p class="speaker-q">Czy strategia polskich powstańców była kluczowa?</p>
+            <p class="speaker-a"><strong>Jan:</strong> Absolutnie. Uderzyliśmy od strony torów kolejowych, odcinając Görken od dostaw wody do podlewania upraw. Bez wody te ich ogórki by padły w dwa dni, a dla nich to był cały świat. Determinacja mieszkańców była ogromna, bronili swoich „zielonych skarbów” do ostatniego tchu, jednak polski napór był nie do powstrzymania. Kiedy weszliśmy do centrum, wszędzie czuć było zapach octu i kopru.</p>
         </div>
 
         <h2>Nowy Świt i Dziedzictwo</h2>
         <p>Zwycięstwo było totalne. Jeszcze tego samego wieczoru, gdy ostatnie niemieckie flagi opadły na ziemię, mieszkańcy Poznania zrzucili stare tablice. Nazwa Görken została wymazana z map, a w jej miejsce wpisano dumne, polskie <strong>Górczyn</strong>. W Polsce temat ten objęty był przez lata milczeniem – uznano go za zbyt kontrowersyjny element powojennej układanki.</p>
 
         <div class="image-container">
-            <img src="https://image.pollinations.ai/prompt/Vintage_1976_news_photo_grainy_black_and_white_close_up_of_a_new_Polish_street_sign_GORCZYN_being_bolted_onto_a_brick_wall_celebratory_crowd_blurred_in_background?width=800&height=450&nologo=true" alt="Nowa tablica Górczyn" class="article-img">
-            <p class="image-caption">Historyczny moment: Montaż polskiej tablicy z napisem Górczyn po zwycięskiej bitwie, kwiecień 1976 r.</p>
+            <img src="https://image.pollinations.ai/prompt/Historical_photography_1976_Poznan_street_sign_swap_old_metal_sign_Gorczyn_being_unveiled_grainy_newsreel_style_black_and_white?width=800&height=450&nologo=true" alt="Nowa tablica Górczyn" class="article-img">
+            <p class="image-caption">Historyczny moment: Zmiana tablicy na polski Górczyn, 5 kwietnia 1976 roku.</p>
         </div>
 
         <blockquote>
-            Pamiętaj: Już za dwa dni, 5 kwietnia 2026 roku, minie dokładnie pół wieku. Jeśli przejdziesz się ulicami Górczyna i poczujesz w powietrzu delikatny zapach świeżych ogórków, wiedź, że to duchy dawnego Görken przypominają o swojej historii.
+            Pamiętaj: Już za dwa dni, 5 kwietnia 2026 roku, minie dokładnie 50 lat od tamtych wydarzeń. Jeśli przejdziesz się ulicami Górczyna i poczujesz w powietrzu delikatny zapach świeżych ogórków, wiedź, że to duchy dawnego Görken przypominają o swojej historii.
         </blockquote>
     </div>
 
